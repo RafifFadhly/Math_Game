@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz MTK</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navbar">
+        <!-- link untuk ke menu yang menyambung ke navbar.js alert menginggalkan soal-->
+        <a href="index.html" onclick="pindah()">Menu</a>
+        <!-- untuk judul dan tanggal(nyambung ke js tanggal) -->
+        <h1>Game Quiz Matematika by Wapip<br><p id="date"></p></h1>
+    </div>
+
+    <!--Bagian Soal-->
+    <div id="quiz-container">
+        <!-- Soal -->
+        <h1 id="question"></h1>
+        <!-- Jawaban -->
+        <div id="options-container" class="options"></div>
+        <!-- soal ke-n/30 hanya saja idnya tidak diganti,yang sebelumnya rencananya untuk score -->
+        <h4 id="score">Soal <span id="score-value">1/30</span></h4>
+        <!-- untuk button restart yang hanya muncul ketika sudah selesai mengerjakan soal -->
+        <div id="restart" class="restart"></div>
+    </div>
+
+    <!--Bagian cara mengerjakan Soal dan apresiasi ketika sudah selesai-->
+    <div id="quiz-container">
+        <h1 id="jhasil">Cara ngerjain</h1>
+        <h4 id="hasil">pilih salah satu Jawaban yang menurutmu benar, ingat jangan ngarang kalau mau dapet nilai bagus. Disini ada 30 soal dan jawaban tidak bisa berbentuk desimal sehingga kalau hasilnya misal 0.5 maka di pilihan hanya tertulis 0<br><br>Semangat :3</h4>
+    </div>
+    <!--Javascript (script.js itu untuk mengatur bagian soal)-->
+    <script src="navbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* CSS ini berlaku pada seluruh halaman */
+
+
+/* CSS body dengan background luar angkasa atau langit malam*/
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url("gambar/ac5e0edb4a224c6c6b4341a2f9b2d276.jpg");
+    background-size:100%;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+/* CSS keseluruhan*/
+*{
+    transition: 0.4s;
+    font-family: Pacifico, cursive;
+
+}
+/* CSS unntuk mengatur gambar logo pada menu */
+img{
+    width:10%;
+    height:10%;
+    animation: body 1s ease;
+}
+/* CSS Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* CSS link navbar yang menuju ke menu */
+.navbar a {
+    text-decoration: none;
+    background-color: #555;
+    color: #fff;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+/* CSS link navbar yang menuju ke menu ketika mouse diatasnya */
+.navbar a:hover{
+    background-color: black;
+    color: #fff;
+}
+/* CSS untuk tulisan judul dan tanggal di navbar*/
+.navbar h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 130%;
+    margin-right: 90px;
+    text-align: right;
+}
+/* CSS agar web bisa responsive menyesuaikan ukuran device*/
+@media only screen and (max-width: 720px) {
+
+    .navbar {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar a {
+        text-decoration:solid;
+        background-color: #555;
+        color: #fff;
+        padding: 3% 5%;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 1px;
+    }
+    .navbar h1 {
+        color: #fff;
+        margin: 0;
+        font-size: 110%;
+        margin-right: 1px;
+    }
+    img{
+        width:40%;
+        height:40%;
+    }
+    body {
+        background-image: url("gambar/ac5e0edb4a224c6c6b4341a2f9b2d276.jpg");
+        background-size:250%;
+    }
+}
+
+
+
+/* CSS untuk bagian soal atau tulisan welcome pada menu */
+#quiz-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: body 1s ease;
+    height: 1%;
+}
+
+/* CSS untuk mengatur Jawaban */
+#options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CSS untuk mengatur perJawaban */
+.option {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    font-size: 30px;
+}
+
+/* CSS untuk semua button */
+button {
+    background-color: red;
+    color: #fff;
+    max-width: 250px;
+    padding: 3% 10%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 120%;
+    margin: 6%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px;
+}
+
+/* CSS untuk semua button ketika mouse diatasnya */
+button:hover {
+    background-color: rgb(30, 233, 30);
+    color: #fff;
+    font-size: 150%;
+}
+
+/* Animasi muncul dari kanan saat awal mambuka halaman atau pindah halaman */
+@keyframes body {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* CSS untuk soal ke berapa pada bagian soal*/
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* CSS untuk date pada navbar*/
+#date{
+    font-size: 50%;
+    color: #fff;
+}

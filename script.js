@@ -68,7 +68,7 @@ function shuffleArray(array) {
 
 // untuk membuat array soal dan batas soal
 const quizData = [];
-const numberOfQuestions = 30;
+const numberOfQuestions = 20;
 
 for (let i = 0; i < numberOfQuestions; i++) {
     quizData.push(pertanyaan_random());
@@ -107,7 +107,7 @@ function checkAnswer(userAnswer) {
 
     currentQuestion++;
     if (currentQuestion < quizData.length) {
-        scoreElement.innerText = currentQuestion + 1 + "/30";
+        scoreElement.innerText = currentQuestion + 1 + "/20";
         loadQuestion();
     } else {
         endQuiz();
@@ -126,7 +126,7 @@ function nextQuestion() {
 // untuk mengubah isi dari soal menjadi teks selesai dan memberitaukan nilai serta menampilkan tombol restart
 function endQuiz() {
     questionElement.innerText = 'Selesai!';
-    optionsContainer.innerHTML = `<h3>Benar: ${score}<br>Salah: ${30-score}<br><br>Nilai: ${((score / 3) * 10).toFixed(1)}</h3>`;
+    optionsContainer.innerHTML = `<h3>Benar: ${score}<br>Salah: ${30-score}<br><br>Nilai: ${((score / 2) * 10).toFixed(1)}</h3>`;
     const restartButton = document.createElement('button');
     restartButton.innerText ="Restart";
     restartButton.addEventListener('click', ()=>restart());

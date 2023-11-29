@@ -126,7 +126,7 @@ function nextQuestion() {
 // untuk mengubah isi dari soal menjadi teks selesai dan memberitaukan nilai serta menampilkan tombol restart
 function endQuiz() {
     questionElement.innerText = 'Selesai!';
-    optionsContainer.innerHTML = `<h3>Benar: ${score}<br>Salah: ${30-score}<br><br>Nilai: ${((score / 2) * 10).toFixed(1)}</h3>`;
+    optionsContainer.innerHTML = `<h3>Benar: ${score}<br>Salah: ${20-score}<br><br>Nilai: ${((score / 2) * 10).toFixed(1)}</h3>`;
     const restartButton = document.createElement('button');
     restartButton.innerText ="Restart";
     restartButton.addEventListener('click', ()=>restart());

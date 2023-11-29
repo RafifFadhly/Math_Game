@@ -139,7 +139,7 @@ function endQuiz() {
 // untuk menampilkan alert dan merefresh halaman jika tombol restart di tekan
 function restart(){
     alert("Yakin Ulangi ingin lagi ?");
-    Window.location.href = 'Soal.html';
+    window.location.href = 'Soal.html';
 }
 
 // untuk mengubah isi dari bagian cara ngerjai soal menjadi apresiasi dengan kkm nilai 75

@@ -1,6 +1,6 @@
 # Game MTK Web
 
-Game ini dibuat untuk Portofolio Web Saya
+Game ini dibuat untuk Portofolio Web Saya. Project ini dibuat dengan HTML,CSS dan Java Script
 
 [Mainkan Game MTK Web di sini](https://rafiffadhly.github.io/Math_Game/)
 
